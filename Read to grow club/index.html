@@ -15,7 +15,6 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <div id="loader-container"></div>
 
     
     <!-- Navigation -->
@@ -355,16 +354,7 @@
         
     </script>
 
-    <script>
-  fetch("loader.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("loader-container").innerHTML = html;
-      const script = document.createElement("script");
-      script.src = "loader.js";
-      document.body.appendChild(script);
-    });
-</script>
+  
 
    
 
@@ -372,4 +362,5 @@
     
 
 </body>
+
 </html>
